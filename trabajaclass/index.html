@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computación Cuántica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark text-white">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#"> Computación Cuántica</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#principios">Principios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tarjetas">Aplicaciones</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Más</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Cúbits</a></li>
+                                <li><a class="dropdown-item" href="#">IBM Quantum</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Glosario</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#tarjetas" class="btn btn-outline-info ms-3">Explorar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="hero" class="py-5 bg-dark">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="badge bg-info text-dark mb-3">Fuente: IBM Think</span>
+                    <h1 class="display-4 fw-bold">El futuro de la computación es <span class="text-info">cuántico</span>
+                    </h1>
+                    <p class="lead text-secondary mt-3">
+                        La computación cuántica aprovecha las cualidades únicas de la mecánica cuántica para resolver
+                        problemas más allá de la capacidad incluso de los ordenadores clásicos más potentes.
+                    </p>
+                    <div class="mt-4 d-flex flex-wrap gap-3">
+                        <a href="#tarjetas" class="btn btn-info text-dark fw-bold px-4">Ver aplicaciones</a>
+                        <a href="#principios" class="btn btn-outline-light px-4">Principios</a>
+                    </div>
+                    <!-- Mini stats -->
+                    <div class="row text-center mt-5 g-3">
+                        <div class="col-4">
+                            <div class="border border-secondary rounded p-3">
+                                <div class="fs-4 fw-bold text-info">1.3T</div>
+                                <div class="small text-secondary">Mercado est. 2035</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border border-secondary rounded p-3">
+                                <div class="fs-4 fw-bold text-info">4</div>
+                                <div class="small text-secondary">Principios clave</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border border-secondary rounded p-3">
+                                <div class="fs-4 fw-bold text-info">100+</div>
+                                <div class="small text-secondary">Cúbits posibles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="bg-secondary bg-opacity-10 rounded-4 p-5 border border-info border-opacity-25">
+                        <div class="display-1"></div>
+                        <h4 class="text-info mt-3">¿Qué es un cúbit?</h4>
+                        <p class="text-secondary small mt-2">
+                            A diferencia de los bits clásicos (0 ó 1), un cúbit puede ser ambos estados
+                            simultáneamente gracias a la superposición cuántica.
+                        </p>
+                        <a href="https://www.ibm.com/es-es/think/topics/quantum-computing" target="_blank"
+                            class="btn btn-sm btn-outline-info mt-2">Leer en IBM →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="principios" class="py-5 bg-black">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">4 Principios <span class="text-info">Fundamentales</span></h2>
+                <p class="text-secondary">Los fenómenos cuánticos que hacen posible esta tecnología.</p>
+                <hr class="border-info w-25 mx-auto">
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-start gap-3 p-4 border border-secondary rounded-3">
+                        <span class="badge bg-info text-dark fs-5 px-3 py-2">01</span>
+                        <div>
+                            <h5 class="text-info fw-bold">Superposición</h5>
+                            <p class="text-secondary mb-0 small">Un cúbit puede representar una combinación de todos sus
+                                estados posibles al mismo tiempo, creando espacios computacionales multidimensionales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-start gap-3 p-4 border border-secondary rounded-3">
+                        <span class="badge bg-info text-dark fs-5 px-3 py-2">02</span>
+                        <div>
+                            <h5 class="text-info fw-bold">Entrelazamiento</h5>
+                            <p class="text-secondary mb-0 small">Los cúbits entrelazados correlacionan sus estados
+                                instantáneamente: medir uno revela información de todos los demás del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-start gap-3 p-4 border border-secondary rounded-3">
+                        <span class="badge bg-info text-dark fs-5 px-3 py-2">03</span>
+                        <div>
+                            <h5 class="text-info fw-bold">Interferencia</h5>
+                            <p class="text-secondary mb-0 small">Es el motor de la computación cuántica. Amplifica los
+                                resultados correctos y cancela los incorrectos mediante patrones de ondas de
+                                probabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-start gap-3 p-4 border border-secondary rounded-3">
+                        <span class="badge bg-info text-dark fs-5 px-3 py-2">04</span>
+                        <div>
+                            <h5 class="text-info fw-bold">Decoherencia</h5>
+                            <p class="text-secondary mb-0 small">El colapso del estado cuántico por medición o factores
+                                ambientales. Minimizarla es uno de los mayores retos de la ingeniería cuántica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarjetas" class="py-5 bg-dark">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Aplicaciones <span class="text-info">Prácticas</span></h2>
+                <p class="text-secondary">Sectores que serán transformados por la computación cuántica.</p>
+                <hr class="border-info w-25 mx-auto">
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-black text-white border-secondary h-100">
+                        <div class="card-body">
+                            <div class="fs-2 mb-3"></div>
+                            <h5 class="card-title text-info">Farmacéutica</h5>
+                            <p class="card-text text-secondary small">Los ordenadores cuánticos identifican moléculas
+                                candidatas para fármacos más rápido, modelando interacciones moleculares imposibles para
+                                los sistemas clásicos.</p>
+                        </div>
+                        <div class="card-footer border-secondary">
+                            <span class="badge bg-info text-dark">Biología</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-black text-white border-secondary h-100">
+                        <div class="card-body">
+                            <div class="fs-2 mb-3"></div>
+                            <h5 class="card-title text-info">Finanzas</h5>
+                            <p class="card-text text-secondary small">Descubrimiento de patrones ocultos en mercados y
+                                optimización de carteras de inversión mediante técnicas matemáticas inaccesibles para la
+                                computación clásica.</p>
+                        </div>
+                        <div class="card-footer border-secondary">
+                            <span class="badge bg-info text-dark">Optimización</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-black text-white border-secondary h-100">
+                        <div class="card-body">
+                            <div class="fs-2 mb-3"></div>
+                            <h5 class="card-title text-info">Ciencia de Materiales</h5>
+                            <p class="card-text text-secondary small">Diseño de nuevos materiales con propiedades
+                                específicas para ingeniería, explorando comportamientos a escala atómica con precisión
+                                cuántica.</p>
+                        </div>
+                        <div class="card-footer border-secondary">
+                            <span class="badge bg-info text-dark">Ingeniería</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-black text-white border-secondary h-100">
+                        <div class="card-body">
+                            <div class="fs-2 mb-3"></div>
+                            <h5 class="card-title text-info">Plegamiento de Proteínas</h5>
+                            <p class="card-text text-secondary small">Modelado preciso de la estructura 3D de proteínas,
+                                crucial para entender enfermedades y desarrollar terapias más eficaces.</p>
+                        </div>
+                        <div class="card-footer border-secondary">
+                            <span class="badge bg-info text-dark">Salud</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-black text-white border-secondary h-100">
+                        <div class="card-body">
+                            <div class="fs-2 mb-3"></div>
+                            <h5 class="card-title text-info">Criptografía Cuántica</h5>
+                            <p class="card-text text-secondary small">Nuevos paradigmas de seguridad basados en el
+                                entrelazamiento cuántico, capaces de detectar cualquier intento de interceptación de
+                                comunicaciones.</p>
+                        </div>
+                        <div class="card-footer border-secondary">
+                            <span class="badge bg-info text-dark">Seguridad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-black text-white border-secondary h-100">
+                        <div class="card-body">
+                            <div class="fs-2 mb-3"></div>
+                            <h5 class="card-title text-info">Inteligencia Artificial</h5>
+                            <p class="card-text text-secondary small">Aceleración de algoritmos de machine learning,
+                                permitiendo entrenar modelos más complejos y encontrar soluciones óptimas en espacios de
+                                búsqueda enormes.</p>
+                        </div>
+                        <div class="card-footer border-secondary">
+                            <span class="badge bg-info text-dark">IA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

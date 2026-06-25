@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Usando Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <font dir="auto" style="vertical-align: inherit">
+              <font dir="auto" style="vertical-align: inherit"
+                >Barra de navegación superior</font
+              >
+            </font>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <font dir="auto" style="vertical-align: inherit">
+                    <font dir="auto" style="vertical-align: inherit"
+                      >Hogar</font
+                    >
+                  </font>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <font dir="auto" style="vertical-align: inherit">
+                    <font dir="auto" style="vertical-align: inherit"
+                      >Enlace</font
+                    >
+                  </font>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">
+                  <font dir="auto" style="vertical-align: inherit">
+                    <font dir="auto" style="vertical-align: inherit"
+                      >Desactivado</font
+                    >
+                  </font>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <font dir="auto" style="vertical-align: inherit">
+                  <font dir="auto" style="vertical-align: inherit">Buscar</font>
+                </font>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <main>
+    <section>
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">
+          <font dir="auto" style="vertical-align: inherit">
+            <font dir="auto" style="vertical-align: inherit"
+              >Captura de pantalla centrada</font
+            >
+          </font>
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            <font dir="auto" style="vertical-align: inherit">
+              <font dir="auto" style="vertical-align: inherit"
+                >Diseña y personaliza rápidamente sitios web responsivos
+                optimizados para móviles con Bootstrap, el kit de herramientas
+                de código abierto para front-end más popular del mundo, que
+                incluye variables y mixins de Sass, un sistema de cuadrícula
+                responsivo, una amplia gama de componentes predefinidos y
+                potentes complementos de JavaScript.</font
+              >
+            </font>
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+              <font dir="auto" style="vertical-align: inherit">
+                <font dir="auto" style="vertical-align: inherit"
+                  >Botón principal</font
+                >
+              </font>
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              <font dir="auto" style="vertical-align: inherit">
+                <font dir="auto" style="vertical-align: inherit"
+                  >Secundario</font
+                >
+              </font>
+            </button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5">
+            <img
+              src="https://picsum.photos/720/480"
+              class="img-fluid border rounded-3 shadow-lg mb-4"
+              alt="Imagen de ejemplo"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/720/480" />
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/720/480" />
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/720/480" />
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://picsum.photos/720/480" />
+            <div class="card-body">
+              <h5 class="card-title">Card title 4</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/720/480"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title 5</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Container-fluid">
+      <div class="row">
+        <div class="col" style="background-color: #ccc">
+          <picture>
+            <source
+              srcset="https://picsum.photos/id/200/800/800"
+              media="(min-width: 1025px)"
+            />
+            <source
+              srcset="https://picsum.photos/id/200/480/480"
+              media="(min-width: 1025px)"
+            />
+            <img
+              src="https://picsum.photos/id/200/380/380"
+              alt="half img 1"
+              class="object-fit-cover w-100 h-100"
+            />
+          </picture>
+        </div>
+        <div class="col" style="background-color: #333; color: #fff">
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label"
+              >Email</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="staticEmail"
+                value="email@example.com"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label"
+              >Password</label
+            >
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>
+              <font dir="auto" style="vertical-align: inherit"
+                ><font dir="auto" style="vertical-align: inherit"
+                  >Sección</font
+                ></font
+              >
+            </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Hogar</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Características</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Precios</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Preguntas frecuentes</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Acerca de</font
+                    ></font
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>
+              <font dir="auto" style="vertical-align: inherit"
+                ><font dir="auto" style="vertical-align: inherit"
+                  >Sección</font
+                ></font
+              >
+            </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Hogar</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Características</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Precios</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Preguntas frecuentes</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Acerca de</font
+                    ></font
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>
+              <font dir="auto" style="vertical-align: inherit"
+                ><font dir="auto" style="vertical-align: inherit"
+                  >Sección</font
+                ></font
+              >
+            </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Hogar</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Características</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Precios</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Preguntas frecuentes</font
+                    ></font
+                  ></a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Acerca de</font
+                    ></font
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>
+                <font dir="auto" style="vertical-align: inherit"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    >Suscríbete a nuestro boletín informativo</font
+                  ></font
+                >
+              </h5>
+              <p>
+                <font dir="auto" style="vertical-align: inherit"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    >Resumen mensual de nuestras novedades y proyectos más
+                    interesantes.</font
+                  ></font
+                >
+              </p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Dirección de correo electrónico</font
+                    ></font
+                  ></label
+                >
+                <input
+                  id="newsletter1"
+                  type="email"
+                  class="form-control"
+                  placeholder="Dirección de correo electrónico"
+                />
+                <button class="btn btn-primary" type="button">
+                  <font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >Suscribir</font
+                    ></font
+                  >
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>
+            <font dir="auto" style="vertical-align: inherit"
+              ><font dir="auto" style="vertical-align: inherit"
+                >© 2025 Company, Inc. Todos los derechos reservados.</font
+              ></font
+            >
+          </p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Instagram"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Facebook"
+                ><svg class="bi" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </footer>
+</html>

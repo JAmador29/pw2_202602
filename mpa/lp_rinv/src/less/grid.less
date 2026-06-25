@@ -1,0 +1,42 @@
+.generarColumnas(@prefix, @columns, @iteracion : 1)
+    when(@iteracion =< @columns)
+{
+    @selector: ~'.col-@{prefix}@{iteracion}';
+    @ancho: (100% / @columns * @iteracion);
+
+    @offsetSelector: ~'.offset-@{prefix}@{iteracion}';
+
+    @{selector} {
+        flex-basis: @ancho;
+    }
+    @{offsetSelector} {
+        margin-left: @ancho;
+    }
+
+    .generarColumnas(@prefix, @columns, (@iteracion + 1))
+}
+
+.grid {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        [class*='col-'] {
+            flex: 0, 0;
+            border: 1px solid darken(@primary-text-color, 30%);
+        }
+    }
+    // Generar las columnas para móviles
+    .generarColumnas('', 12);
+    // Generar para Tablers
+    @media (min-width: #break-points[tablet]) {
+        .generarColumnas('md-', 12);
+    }
+    // Generar para Tablers
+    @media (min-width: #break-points[desktop]) {
+        .generarColumnas('lg-', 12);
+    }
+    // Generar para Tablers
+    @media (min-width: #break-points[wide]) {
+        .generarColumnas('xl-', 12);
+    }
+}

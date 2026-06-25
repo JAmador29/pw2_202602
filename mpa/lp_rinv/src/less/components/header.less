@@ -1,0 +1,30 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    .standard_padding();
+    section{
+        flex:1;
+        h1{
+            margin:0px;
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            li{
+                a{
+                    display: inline-block;
+                    .standard_padding();
+                    text-align: center;
+                    text-decoration: none;
+                    color: @secondary-text-color;
+                    &:hover{
+                        background-color: @primary-background-color;
+                    }
+                }
+            }
+        }
+    }
+}

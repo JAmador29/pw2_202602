@@ -1,0 +1,113 @@
+@unit-keys: 1 2 3 4 5 6 7 8 10 12 16 20 80 96 0;
+@unit-vals: 0.25 0.5 0.75 1 1.25 1.5 1.75 2 2.5 3 4 5 20 24 ~'none';
+
+.generarClases(@prefijo, @selector, @reglas...) {
+    ._applyProps(@unit, @index) when (@index > 0) {
+        @ruleItem : extract(@reglas, @index);
+        @{ruleItem} : if((isstring(@unit)), none, unit(@unit, rem));
+        ._applyProps(@unit, @index - 1);
+    }
+    ._applyProps(@unit, 0) {}
+
+    ._iterar(@i) when (@i =< length(@unit-keys)) {
+        @key: extract(@unit-keys, @i);
+        @val: extract(@unit-vals, @i);
+
+        .@{prefijo}@{selector}-@{key} {
+            ._applyProps(@val, length(@reglas));
+        }
+        ._iterar(@i + 1);
+    }
+    ._iterar(@i) when (@i > length(@unit-keys)){}
+
+    ._iterar(1);
+}
+
+
+.generarClases(~'', m, margin);
+.generarClases(~'', mb, margin-bottom);
+.generarClases(~'', mt, margin-top);
+.generarClases(~'', ml, margin-left);
+.generarClases(~'', mr, margin-right);npm install vite-plugin-purgecss --save-dev
+.generarClases(~'', mx, margin-left, margin-right);
+.generarClases(~'', my, margin-top, margin-bottom);
+
+.generarClases(~'', p, padding);
+.generarClases(~'', pb, padding-bottom);
+.generarClases(~'', pt, padding-top);
+.generarClases(~'', pl, padding-left);
+.generarClases(~'', pr, padding-right);
+.generarClases(~'', px, padding-left, padding-right);
+.generarClases(~'', py, padding-top, padding-bottom);
+
+.generarClases(~'', gap, gap);
+
+@media (min-width: #break-points[tablet]) {
+    .generarClases(~'md-', m, margin);
+    .generarClases(~'md-', mb, margin-bottom);
+    .generarClases(~'md-', mt, margin-top);
+    .generarClases(~'md-', ml, margin-left);
+    .generarClases(~'md-', mr, margin-right);
+    .generarClases(~'md-', mx, margin-left, margin-right);
+    .generarClases(~'md-', my, margin-top, margin-bottom);
+
+    .generarClases(~'md-', p, padding);
+    .generarClases(~'md-', pb, padding-bottom);
+    .generarClases(~'md-', pt, padding-top);
+    .generarClases(~'md-', pl, padding-left);
+    .generarClases(~'md-', pr, padding-right);
+    .generarClases(~'md-', px, padding-left, padding-right);
+    .generarClases(~'md-', py, padding-top, padding-bottom);
+
+    .generarClases(~'md-', gap, gap);
+}
+
+@media (min-width: #break-points[desktop]) {
+    .generarClases(~'lg-', m, margin);
+    .generarClases(~'lg-', mb, margin-bottom);
+    .generarClases(~'lg-', mt, margin-top);
+    .generarClases(~'lg-', ml, margin-left);
+    .generarClases(~'lg-', mr, margin-right);
+    .generarClases(~'lg-', mx, margin-left, margin-right);
+    .generarClases(~'lg-', my, margin-top, margin-bottom);
+
+    .generarClases(~'lg-', p, padding);
+    .generarClases(~'lg-', pb, padding-bottom);
+    .generarClases(~'lg-', pt, padding-top);
+    .generarClases(~'lg-', pl, padding-left);
+    .generarClases(~'lg-', pr, padding-right);
+    .generarClases(~'lg-', px, padding-left, padding-right);
+    .generarClases(~'lg-', py, padding-top, padding-bottom);
+
+    .generarClases(~'lg-', gap, gap);
+}
+@media (min-width: #break-points[wide]) {
+    .generarClases(~'xl-', m, margin);
+    .generarClases(~'xl-', mb, margin-bottom);
+    .generarClases(~'xl-', mt, margin-top);
+    .generarClases(~'xl-', ml, margin-left);
+    .generarClases(~'xl-', mr, margin-right);
+    .generarClases(~'xl-', mx, margin-left, margin-right);
+    .generarClases(~'xl-', my, margin-top, margin-bottom);
+
+    .generarClases(~'xl-', p, padding);
+    .generarClases(~'xl-', pb, padding-bottom);
+    .generarClases(~'xl-', pt, padding-top);
+    .generarClases(~'xl-', pl, padding-left);
+    .generarClases(~'xl-', pr, padding-right);
+    .generarClases(~'xl-', px, padding-left, padding-right);
+    .generarClases(~'xl-', py, padding-top, padding-bottom);
+
+    .generarClases(~'xl-', gap, gap);
+}
+
+
+.standard_padding {
+    padding: 0.75rem 0.5rem;
+}
+
+.cover-img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
